@@ -1,30 +1,15 @@
-<!doctype html><html lang="ko"><head><title>Transformer Site Test Record</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<style>:root{--bg:#F2F2EC;--card:#fff;--ink:#1B1B17;--ink-2:#5C5C52;--ink-3:#8B8B7E;--line:#D9D9CF;--acc:#E0B100;--acc-ink:#6B5400}
-@media(prefers-color-scheme:dark){:root{--bg:#141410;--card:#1D1D17;--ink:#EDEBE0;--ink-2:#B0AE9F;--ink-3:#7E7C70;--line:#33322A;--acc:#F2C630;--acc-ink:#F2C630}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",system-ui,sans-serif;font-size:16px;line-height:1.7}
-#g{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px}
-.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--acc);max-width:520px;width:100%;padding:34px}
-.eb{display:flex;justify-content:space-between;color:var(--ink-3);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}.eb b{font-family:monospace;color:var(--acc-ink);font-size:15px}
-h1{font-size:24px;line-height:1.3;margin:14px 0 8px}p{margin:0;color:var(--ink-2)}
-form{display:grid;gap:12px;margin-top:22px}
-label{display:grid;gap:6px;font-size:13px;color:var(--ink-3);letter-spacing:.04em}
-input{font:inherit;font-family:"IBM Plex Mono",monospace;font-size:22px;letter-spacing:.1em;text-align:center;
-  padding:14px 12px;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);width:100%}
-input:focus{outline:none;border-color:var(--acc)}
-button{font:inherit;font-weight:600;font-size:17px;padding:15px;border:0;border-radius:6px;background:var(--acc);color:#1B1B17;cursor:pointer}
-.hint{margin-top:14px;font-size:13px;color:var(--ink-3)}
-.err{margin-top:12px;font-size:14px;color:#A8321F}</style></head><body><div id="g"><main class="card"><div class="eb"><span>Transformer Site Test Record</span><b></b></div><h1>기록판 번호로 성적서 찾기</h1><p>QR 을 찍으면 바로 해당 번호로 갑니다. QR 이 상해 읽히지 않으면 판에 새겨진 번호를 아래에 넣으세요.</p><form id="f" autocomplete="off">
-  <label>기록판 번호<input id="n" inputmode="numeric" placeholder="001" maxlength="4" required autofocus></label>
-  <button type="submit">성적서 열기</button>
-</form>
-<p class="hint">판 오른쪽 위의 「No. 001」 에서 숫자만 넣으면 됩니다. 1 · 01 · 001 다 됩니다.</p>
-<p class="hint" style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px">성적서는 판에 적힌 <b>시험일 8자리</b>로 열립니다. 권장 재점검 주기는 <b>5년</b>이며, 재점검 여부와 관계없이 각 번호의 페이지는 계속 열립니다.<br>법정 정기검사와는 별개의 사내 권장 주기입니다.</p>
-<div id="m"></div>
-<script>
-document.getElementById('f').addEventListener('submit', function(e){
-  e.preventDefault();
-  var v = document.getElementById('n').value.replace(/[^0-9]/g, '');
-  if (!v) { document.getElementById('m').innerHTML = '<p class="err">번호를 넣어 주세요.</p>'; return; }
-  location.href = '/tr/' + ('00' + v).slice(-3) + '/';
-});
-</script></main></div></body></html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>주소가 바뀌었습니다</title>
+<meta http-equiv="refresh" content="0; url=https://mrpower.kr/find/">
+<link rel="canonical" href="https://mrpower.kr/find/">
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+background:#F2F2EC;color:#1B1B17;font-family:"Malgun Gothic",system-ui,sans-serif;padding:32px}
+main{max-width:460px;background:#fff;border:1px solid #D9D9CF;border-top:6px solid #E0B100;padding:32px}
+h1{font-size:20px;margin:0 0 10px}p{color:#5C5C52;line-height:1.7;margin:0 0 14px}
+a{display:inline-block;font-weight:700;padding:12px 18px;background:#E0B100;color:#1B1B17;text-decoration:none;border-radius:6px}</style>
+</head><body><main>
+<h1>주소가 바뀌었습니다</h1>
+<p>이 기록판의 성적서는 이제 아래 주소에 있습니다. 잠시 뒤 자동으로 넘어갑니다.</p>
+<a href="https://mrpower.kr/find/">mrpower.kr/find 로 이동</a>
+</main></body></html>
